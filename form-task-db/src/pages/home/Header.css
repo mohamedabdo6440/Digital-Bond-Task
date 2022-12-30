@@ -1,0 +1,188 @@
+.Header {
+
+    background-color: #00000007;
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+.main_parent {
+    background-image: url("../../assets/images/shadow_home.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+}
+
+.parent_prand {
+    background-image: url("../../assets/images/main_triangle.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: right;
+    height: 360px;
+    padding: 105px;
+    position: relative;
+    width: 579px;
+}
+
+.parent_prand .toFace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+}
+
+.parent_prand .prand {
+    position: absolute;
+    top: 110px;
+    left: 390px;
+}
+
+.parent_prand .closeIcon {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+
+.welcome_photo {
+    position: relative;
+    height: 390px;
+    margin-top: 120px;
+    width: 510px;
+
+}
+
+
+.welcome_photo img {
+    position: absolute;
+    bottom: 55px;
+    right: 0px;
+    left: 0;
+}
+
+.Header .lets {
+    margin-top: -170px;
+    width: 250px;
+    margin-left: 380px;
+}
+
+.Header .lets img {
+    width: 250px;
+}
+
+.hiring {
+    position: absolute;
+    top: 515px;
+    left: 0;
+    width: 185px;
+    height: 60px;
+    background-color: #ac2423d9;
+    border-radius: 0px 100px 100px 0px;
+    cursor: pointer;
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: cursive;
+
+}
+
+
+.hiring:hover {
+    position: absolute;
+    top: 515px;
+    left: 0;
+    width: 250px;
+    height: 60px;
+    background-color: #ac242300;
+    border: 1px solid #ac2423d9;
+    border-radius: 0px 100px 100px 0px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ac2423d9;
+    transition: .3s;
+}
+
+
+/*Responsive Elements In Header*/
+
+@media only screen and (max-width: 776px) {
+
+    .parent_prand {
+        height: 150px;
+        width: 370px;
+        top: -202px;
+        right: -17px;
+    }
+
+    .parent_prand .Tringle {
+        width: 200px;
+        position: absolute;
+        top: 63px;
+        left: 60px;
+    }
+
+
+    .parent_prand .prand {
+
+        left: 220px;
+        top: 70px;
+
+    }
+
+    .parent_prand .closeIcon {
+        width: 30px;
+    }
+
+    .parent_prand .toFace {
+        width: 30px;
+    }
+
+    .welcome_photo {
+
+        height: 150px;
+        margin-top: 170px;
+        width: 250px;
+    }
+
+    .welcome_photo img {
+        position: absolute;
+        bottom: 55px;
+        right: 0px;
+        left: 0;
+    }
+
+    .Header .lets {
+        margin-top: -150px;
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    .Header .lets img {
+        width: 200px;
+    }
+}
+
+
+@media only screen and (main-width: 822px) {
+
+    .parent_prand {
+        top: 0;
+    }
+
+
+    .Header .lets {
+        width: 250px;
+        margin-top: -90px;
+    }
+
+    .Header .lets img {
+        width: 250px;
+    }
+}
