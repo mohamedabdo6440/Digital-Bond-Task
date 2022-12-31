@@ -33,7 +33,7 @@ const SignupSchema = Yup.object().shape({
 
     attach: Yup.mixed()
         .nullable()
-        .required()
+        .notRequired()
         .test("FILE_SIZE", "Uploaded file is too big.",
             value => !value || (value && value.size <= 1024 * 1024))
         .test("FILE_FORMAT", "Uploaded file has unsupported format.",
