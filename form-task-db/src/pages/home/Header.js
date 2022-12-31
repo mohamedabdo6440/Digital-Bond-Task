@@ -38,8 +38,8 @@ const Header = () => {
         <img src={bond2} alt={"bond2"} className="bond2" />
       </div>
       <Link to='/applyForm'>
-        <div className='hiring mt-4 mb-4'>
-          <h6 className="word_hiring">Hiring open Day <img src={bell} alt={"bell"} className="w-25" /></h6>
+        <div className='hiring mt-4 mb-4 d-flex'>
+          <div className='click'>| ClickMe</div>
         </div>
       </Link>
 

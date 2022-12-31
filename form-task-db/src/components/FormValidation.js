@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SUPPORTED_FORMATS = ["image/jpg", "image/png", "image/jpeg"]
 
+//fields Rool
 const SignupSchema = Yup.object().shape({
     fullName: Yup.string()
         .min(2, 'Too Short!')
