@@ -23,7 +23,7 @@ const NavBar = ({ applications }) => {
                             <li className="nav-item">
                                 <Link className="nav-link active position-relative" aria-current="page" to="/applications">
                                     APPLICATIONS
-                                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    <span className="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
                                         {applications.length > 0 ? applications.length - 1 : applications.length = 0}
                                         <span className="visually-hidden">unread messages</span>
                                     </span>

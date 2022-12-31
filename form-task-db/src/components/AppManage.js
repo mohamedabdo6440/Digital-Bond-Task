@@ -25,7 +25,7 @@ const AppManage = ({ applications, setApplications }) => {
                             FilterData.map((emp) => {
 
                                 return (
-                                    <Applications {...emp} id={Math.random()} />
+                                    <Applications {...emp} id={Math.random() * 10} />
                                 )
                             })
                         ) : (<h1 className='text-center  text-bg-warning my-5 p-5 rounded-pill'>Not Exist Application </h1>)

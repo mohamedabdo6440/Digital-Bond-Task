@@ -3,15 +3,15 @@ import './Applications.css'
 
 const Applications = ({ id, fullName, position, dateAvail, Salary, birth, Address, Phone, email, Status, handleDelete }) => {
 
-
+    console.log(id);
 
     return (
 
 
 
 
-        <div className="col-md-4" key={id}>
-            <div className="card-app p-3 mb-2">
+        <div className="col-md-4">
+            <div className="card-app p-3 mb-2" key={id}>
                 <div className="d-flex justify-content-between">
                     <div className="d-flex flex-row align-items-center">
                         <div className="icon"> <i className="fa fa-user"></i> </div>

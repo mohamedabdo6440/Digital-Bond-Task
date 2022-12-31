@@ -20,11 +20,6 @@ function App() {
   //All Application
   const [applications, setApplications] = useState([{}]);
 
-  console.log(applications);
-
-
-
-
   return (
 
     <BrowserRouter>
@@ -33,7 +28,7 @@ function App() {
           <Route path="/" element={<Header />} />
           <Route path="/applyForm" element={<Form setApplications={setApplications} />} />
           <Route path="/applications" element={<AppManage applications={applications} setApplications={setApplications} />} />
-          <Route path="/success" element={<Success />} />
+          <Route path="/success" element={applications ? <Success /> : ""} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Layout>
