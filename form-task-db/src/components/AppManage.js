@@ -1,25 +1,15 @@
 import React from 'react'
 import Applications from '../pages/applications/Applications'
 
+//Manage Data state with Out Controller
 const AppManage = ({ applications, setApplications }) => {
 
-    //filter Empty data 
+
+
+    //filter Empty default object 
     const FilterData = applications.filter((emp) => {
         return emp.email;
     })
-
-    //Delete field
-    const handleDelete = (emailEmp) => {
-        const AfterDel = FilterData.filter((emp) => {
-            return emp.email !== emailEmp;
-        })
-
-        return setApplications(AfterDel)
-    }
-
-
-
-
 
     return (
         <div>
@@ -35,7 +25,7 @@ const AppManage = ({ applications, setApplications }) => {
                             FilterData.map((emp) => {
 
                                 return (
-                                    <Applications {...emp} id={Math.random()} handleDelete={handleDelete} />
+                                    <Applications {...emp} id={Math.random()} />
                                 )
                             })
                         ) : (<h1 className='text-center  text-bg-warning my-5 p-5 rounded-pill'>Not Exist Application </h1>)

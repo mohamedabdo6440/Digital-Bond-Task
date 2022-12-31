@@ -30,12 +30,12 @@ const Applications = ({ id, fullName, position, dateAvail, Salary, birth, Addres
                     <span className="heading text-black fw-bold">E-mail  : <h6 className='info'>{email}</h6></span>
                     <span className="heading text-black fw-bold">Marital Status: <h6 className='info'>{Status}</h6></span>
 
-                    <div className="mt-5">
+                    <div className="my-3">
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"></div>
                         </div>
 
-                        <button className='btn btn-success w-100 mt-2'>Contact <i className="fa fa-phone"></i></button>
+                        <button className='btn btn-success w-100'>Contact <i className="fa fa-phone"></i></button>
 
                     </div>
                 </div>

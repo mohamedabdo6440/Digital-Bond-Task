@@ -11,7 +11,7 @@ const NavBar = ({ applications }) => {
         <div className=''>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark NavImage">
                 <div className="container p-1 ">
-                    <a className="navbar-brand" href="/"><img src={Logo} alt="Logo" className='w-50' /></a>
+                    <Link className="navbar-brand" to="/"><img src={Logo} alt="Logo" className='w-50' /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
