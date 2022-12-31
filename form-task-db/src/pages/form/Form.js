@@ -2,6 +2,7 @@ import React from 'react'
 import './Form.css'
 import prand from '../../assets/images/Logo_V2.gif'
 import FormValidation from '../../components/FormValidation'
+import { Link } from 'react-router-dom'
 
 
 const Form = ({ setApplications }) => {
@@ -22,8 +23,10 @@ const Form = ({ setApplications }) => {
                             </div>
                             <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                                <img src={prand}
-                                    className={"img-fluid"} alt={"Sample"} />
+                                <Link to='/'>
+                                    <img src={prand}
+                                        className={"img-fluid"} alt={"Sample"} />
+                                </Link>
                             </div>
                         </div>
                     </div>

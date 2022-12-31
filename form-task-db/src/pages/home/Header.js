@@ -39,7 +39,7 @@ const Header = () => {
       </div>
       <Link to='/applyForm'>
         <div className='hiring mt-4 mb-4 d-flex'>
-          <div className='click'>| ClickMe</div>
+          <div className='click'>Apply now</div>
         </div>
       </Link>
 
