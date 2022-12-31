@@ -9,7 +9,7 @@ import icon4 from '../../../assets/images/whole_curcle_icon.webp'
 
 const Footer = () => {
     return (
-        <div className='Footer'>
+        <div className='Footer py-4'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-3'>
