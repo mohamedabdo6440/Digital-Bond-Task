@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const NavBar = () => {
+const NavBar = ({ applications }) => {
     return (
         <div className=''>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark NavImage">
@@ -21,17 +21,16 @@ const NavBar = () => {
                                 <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">ABOUT</a>
+                                <Link className="nav-link active position-relative" aria-current="page" to="/applications">
+                                    APPLICATIONS
+                                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        {applications.length > 0 ? applications.length - 1 : applications.length = 0}
+                                        <span className="visually-hidden">unread messages</span>
+                                    </span>
+                                </Link>
+
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">SERVICES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">CAREERS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">SAY HELLO</a>
-                            </li>
+
 
                         </ul>
                         <div className='d-flex justify-content-center'>

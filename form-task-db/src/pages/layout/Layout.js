@@ -2,12 +2,12 @@ import React from 'react'
 import NavBar from './navbar/NavBar'
 import Footer from './footer/Footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, applications }) => {
     return (
 
         <>
 
-            <NavBar />
+            <NavBar applications={applications} />
 
             <div className='text-center'>
 

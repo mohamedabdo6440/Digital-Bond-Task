@@ -4,7 +4,7 @@ import prand from '../../assets/images/Logo_V2.gif'
 import FormValidation from '../../components/FormValidation'
 
 
-const Form = () => {
+const Form = ({ setApplications }) => {
 
     return (
 
@@ -17,7 +17,7 @@ const Form = () => {
                             <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
                                 <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Fill fields</p>
-                                <FormValidation />
+                                <FormValidation setApplications={setApplications} />
 
                             </div>
                             <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
