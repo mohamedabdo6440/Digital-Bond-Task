@@ -1,5 +1,4 @@
-.Header {
-
+header {
     background-color: #00000007;
     width: 100%;
     height: 80vh;
@@ -65,13 +64,13 @@
     left: 0;
 }
 
-.Header .lets {
+header .lets {
     margin-top: -170px;
     width: 250px;
     margin-left: 380px;
 }
 
-.Header .lets img {
+header .lets img {
     width: 250px;
 }
 
@@ -188,13 +187,17 @@
         left: 0;
     }
 
-    .Header .lets {
-        margin-top: -150px;
+    .hiring {
+        top: 455px;
+    }
+
+    header .lets {
+        margin-top: -87px;
         width: 200px;
         margin-left: 100px;
     }
 
-    .Header .lets img {
+    header .lets img {
         width: 200px;
     }
 }
@@ -207,12 +210,12 @@
     }
 
 
-    .Header .lets {
+    header .lets {
         width: 250px;
         margin-top: -90px;
     }
 
-    .Header .lets img {
+    header .lets img {
         width: 250px;
     }
 }

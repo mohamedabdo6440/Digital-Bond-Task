@@ -9,12 +9,12 @@ const Layout = ({ children, applications }) => {
 
             <NavBar applications={applications} />
 
-            <div className='text-center'>
+            <main className='text-center'>
 
                 {children}
 
 
-            </div>
+            </main>
 
             <Footer />
 

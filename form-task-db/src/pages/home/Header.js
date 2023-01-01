@@ -9,14 +9,13 @@ import toFace from '../../assets/images/two_face_icon.webp'
 import bond1 from '../../assets/images/bond-1.webp'
 import bond2 from '../../assets/images/bond-2.webp'
 import closeIcon from '../../assets/images/close_icon.webp'
-import bell from '../../assets/images/nicubunu_Bell.png'
 import 'animate.css';
 import { Link } from 'react-router-dom'
 
 
 const Header = () => {
   return (
-    <div className='Header'>
+    <header>
       <div className='main_parent d-flex justify-content-enter'>
         <div className='d-flex'>
           <div className='row '>
@@ -43,7 +42,7 @@ const Header = () => {
         </div>
       </Link>
 
-    </div >
+    </header >
   )
 }
 
